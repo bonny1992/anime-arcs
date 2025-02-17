@@ -12,6 +12,9 @@ to obtain of the info needed.
 ## Json vs Yml
 I used `yml` for my convenience, but I might just use a script to convert them all, let's see.
 
+### Update
+I think I've configured the GitHub action correctly to convert (on request) the files.
+
 ## Contributing
 If you want to contribute, first of all, thank you!
 I will accept pull requests, just make sure to follow the same format!
