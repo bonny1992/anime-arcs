@@ -1,10 +1,23 @@
-- uses: fabasoad/data-format-converter-action@v1.0.0
-  with:
-    # (Required) Pattern in glob format that would be used to list the files.
-    source-pattern: "animes/**/*.yml"
-    # (Optional) Data type of the source files. Possible values: json, xml, yaml,
-    # props, lua. Defaults to the type defined by file extension.
-    from: "yml"
-    # (Required) Data type to be converted to. Possible values: json, xml, yaml,
-    # props, lua.
-    to: "json"
+name: Convertion of yml files into json
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+        -   name: Convert yml files into json
+            uses: fabasoad/data-format-converter-action@v1.0.0
+            with:
+                # (Required) Pattern in glob format that would be used to list the files.
+                source-pattern: "animes/**/*.yml"
+                # (Optional) Data type of the source files. Possible values: json, xml, yaml,
+                # props, lua. Defaults to the type defined by file extension.
+                from: "yml"
+                # (Required) Data type to be converted to. Possible values: json, xml, yaml,
+                # props, lua.
+                to: "json"
