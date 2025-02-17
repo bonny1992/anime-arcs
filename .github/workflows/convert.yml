@@ -35,8 +35,9 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+          TIMESTAMP=$(date +"%Y-%m-%d %H:%M")
           git add animes/**/*.json
-          git commit -m "Convert YAML to JSON"
-          git push
+          git commit -m "Convert YML to JSON - $TIMESTAMP" || echo "No changes to commit"
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
