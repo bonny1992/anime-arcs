@@ -19,7 +19,7 @@ jobs:
 
       - name: Convert YAML to JSON
         run: |
-          find anime -type f -name "*.yml" | while read -r file; do
+          find animes -type f -name "*.yml" | while read -r file; do
             json_file="${file%.yml}.json"
             yq -p=yaml -o=json "$file" > "$json_file"
           done
