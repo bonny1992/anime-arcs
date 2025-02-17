@@ -23,7 +23,7 @@ jobs:
         run: |
           find animes -type f -name "*.yml" | while read -r file; do
             json_file="${file%.yml}.json"
-            yq -o=json "$file" > "$json_file"
+            yq eval -o=json "$file" > "$json_file"
           done
 
       - name: Commit and push changes
