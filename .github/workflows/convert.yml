@@ -14,12 +14,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Python yq
-        run: pip install --force-reinstall yq pyyaml
-
-      - name: Convert YAML to JSON
+      - name: Convert YAML to JSON con Python puro
         run: |
-          python -m yq -p=yaml -o=json anime/**/*.yml
+            python -c '
+            import yaml, json, os
+            for root, _, files in os.walk("anime"):
+                for file in files:
+                    if file.endswith(".yml"):
+                        yml_path = os.path.join(root, file)
+                        json_path = yml_path.replace(".yml", ".json")
+                        with open(yml_path, "r", encoding="utf-8") as yml_file:
+                            data = yaml.safe_load(yml_file)
+                        with open(json_path, "w", encoding="utf-8") as json_file:
+                            json.dump(data, json_file, indent=2, ensure_ascii=False)
+            '
+
 
 
       - name: Commit and push changes
