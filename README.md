@@ -8,3 +8,14 @@ Fundamentally when it will contain more entries, it will be a matter of just doi
     curl https://raw.githubusercontent.com/bonny1992/anime-arcs/refs/heads/main/animes/J/Jujutsu%20Kaisen%20(2020)/arcs.yml
 ```
 to obtain of the info needed.
+
+## Json vs Yml
+I used `yml` for my convenience, but I might just use a script to convert them all, let's see.
+
+## Contributing
+If you want to contribute, first of all, thank you!
+I will accept pull requests, just make sure to follow the same format!
+
+## Any ideas?
+Have you got any ideas on how to improve this project?
+Open an issue and let's talk about it!
