@@ -18,7 +18,7 @@ jobs:
         run: |
             python -c '
             import yaml, json, os
-            for root, _, files in os.walk("anime"):
+            for root, _, files in os.walk("animes"):
                 for file in files:
                     if file.endswith(".yml"):
                         yml_path = os.path.join(root, file)
