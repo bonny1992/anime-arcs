@@ -21,7 +21,7 @@ jobs:
 
       - name: Convert YAML to JSON
         run: |
-          find anime -type f -name "*.yml" | while read -r file; do
+          find animes -type f -name "*.yml" | while read -r file; do
             json_file="${file%.yml}.json"
             yq -o=json "$file" > "$json_file"
           done
@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add anime/**/*.json
+          git add animes/**/*.json
           git commit -m "Convert YAML to JSON"
           git push
         env:
