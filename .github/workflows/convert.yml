@@ -14,16 +14,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install yq (Python)
-        run: pip install yq pyyaml
+      - name: Install Python yq
+        run: pip install --force-reinstall yq pyyaml
 
       - name: Convert YAML to JSON
         run: |
-          which yq || exit 1
-          find animes -type f -name "*.yml" | while read -r file; do
-            json_file="${file%.yml}.json"
-            yq -p=yaml -o=json "$file" > "$json_file"
-          done
+          python -m yq -p=yaml -o=json anime/**/*.yml
+
 
       - name: Commit and push changes
         run: |
