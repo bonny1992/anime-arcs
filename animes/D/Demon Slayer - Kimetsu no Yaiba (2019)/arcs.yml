@@ -1,0 +1,40 @@
+anime_name: Demon Slayer - Kimetsu no Yaiba
+year: 2019
+tvdb_id: 348545
+imdb_id: tt9335498
+arcs:
+  - start_season: 1
+    start_episode: # If empty it will be considered as 1
+    absolute_start_episode: 1
+    end_season: 1
+    end_episode: # If empty it will be considered as the last episode
+    absolute_end_episode: 26
+    name: Tanjiro Kamado, Unwavering Resolve
+  - start_season: 2
+    start_episode: # If empty it will be considered as 1
+    absolute_start_episode: 27
+    end_season: 2
+    end_episode: # If empty it will be considered as the last episode
+    absolute_end_episode: 33
+    name: Mugen Train
+  - start_season: 3
+    start_episode: # If empty it will be considered as 1
+    absolute_start_episode: 34
+    end_season: 3
+    end_episode: # If empty it will be considered as the last episode
+    absolute_end_episode: 44
+    name: Entertainment District
+  - start_season: 4
+    start_episode: # If empty it will be considered as 1
+    absolute_start_episode: 45
+    end_season: 4
+    end_episode: # If empty it will be considered as the last episode
+    absolute_end_episode: 55
+    name: Swordsmith Village
+  - start_season: 5
+    start_episode: # If empty it will be considered as 1
+    absolute_start_episode: 56
+    end_season: 5
+    end_episode: # If empty it will be considered as the last episode
+    absolute_end_episode: 63
+    name: Hashira Training
