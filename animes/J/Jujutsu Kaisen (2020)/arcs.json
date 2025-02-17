@@ -1,0 +1,80 @@
+{
+  "anime_name": "Jujutsu Kaisen",
+  "year": 2020,
+  "tvdb_id": 377543,
+  "imdb_id": "tt12343534",
+  "arcs": [
+    {
+      "start_season": 0,
+      "start_episode": 2,
+      "absolute_start_episode": null,
+      "end_season": 0,
+      "end_episode": 2,
+      "absolute_end_episode": null,
+      "name": "Cursed Child"
+    },
+    {
+      "start_season": 1,
+      "start_episode": 1,
+      "absolute_start_episode": 1,
+      "end_season": 1,
+      "end_episode": 8,
+      "absolute_end_episode": 8,
+      "name": "Fearsome Womb"
+    },
+    {
+      "start_season": 1,
+      "start_episode": 9,
+      "absolute_start_episode": 9,
+      "end_season": 1,
+      "end_episode": 13,
+      "absolute_end_episode": 13,
+      "name": "Vs. Mahito"
+    },
+    {
+      "start_season": 1,
+      "start_episode": 14,
+      "absolute_start_episode": 14,
+      "end_season": 1,
+      "end_episode": 21,
+      "absolute_end_episode": 21,
+      "name": "Kyoto Goodwill Event"
+    },
+    {
+      "start_season": 1,
+      "start_episode": 22,
+      "absolute_start_episode": 22,
+      "end_season": 1,
+      "end_episode": 24,
+      "absolute_end_episode": 24,
+      "name": "Death Painting"
+    },
+    {
+      "start_season": 2,
+      "start_episode": 1,
+      "absolute_start_episode": 22,
+      "end_season": 2,
+      "end_episode": 24,
+      "absolute_end_episode": 24,
+      "name": "Death Painting"
+    },
+    {
+      "start_season": 2,
+      "start_episode": 1,
+      "absolute_start_episode": 25,
+      "end_season": 2,
+      "end_episode": 5,
+      "absolute_end_episode": 29,
+      "name": "Gojo's Past"
+    },
+    {
+      "start_season": 2,
+      "start_episode": 6,
+      "absolute_start_episode": 30,
+      "end_season": 2,
+      "end_episode": 23,
+      "absolute_end_episode": 47,
+      "name": "Shibuya Incident"
+    }
+  ]
+}
