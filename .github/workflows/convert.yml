@@ -17,7 +17,7 @@ jobs:
                 source-pattern: "animes/**/*.yml"
                 # (Optional) Data type of the source files. Possible values: json, xml, yaml,
                 # props, lua. Defaults to the type defined by file extension.
-                from: "yml"
+                from: "yaml"
                 # (Required) Data type to be converted to. Possible values: json, xml, yaml,
                 # props, lua.
                 to: "json"
